@@ -1,0 +1,461 @@
+html{
+    scroll-behavior: smooth
+    
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    background-position: center;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.1)
+    ),url('dark-1852985_1920.jpg');
+}
+
+.navbar{
+    
+    width: 92.3%;
+    margin: auto;
+    padding-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    width: 3.75rem;
+    cursor: pointer;
+    position: relative;
+    top: 0rem;
+    
+}
+
+
+
+.navbar ul li{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin: 0 2.5rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+    position: relative;
+    top: 0rem;
+    
+}
+
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.navbar ul li ::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.313rem;
+    height: 0.188rem;
+    width: 0;
+    background: crimson;
+    transition: 0.5s;
+
+}
+
+.navbar ul li :hover::after{
+    width: 100%;
+}
+
+.row{
+    color: #fff;
+    
+    display: flex;
+    height: 88%;
+}
+.coloumn{
+    
+    flex-basis: 50%;
+    margin: 2% 4.875rem;
+    position: relative;
+    left: -0.625rem;
+    width: 31.25rem;
+}
+.coloumn h1{
+    font-family: 'Bahnschrift Condensed';
+    font-weight: 300;
+    font-weight: bold;
+    font-size: 6.875rem;
+    line-height: 6.25rem;
+    padding-bottom: 1.25rem;
+    padding-top: 5rem;
+}
+.coloumn span{
+    font-family: 'Bahnschrift Condensed';
+    font-weight: 300;
+    font-weight: bold;
+    font-size: 6.875rem;
+    line-height: 6.25rem;
+    color: #f13a11;
+    padding-bottom: 1.25rem;
+    padding-top: 5rem;
+}
+
+.coloumn p{
+    font-family: sans-serif;
+    font-size: 1.125rem;
+}
+
+.card1{
+    
+    width: 12.5rem;
+    height: 14.375rem;
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+   
+   overflow: hidden;
+    padding:2.063rem;
+    margin: 1.25rem;
+    transition: transform 0.5s ;
+
+
+}
+#column2{
+    margin-left: 13.938rem;
+    margin-top: 6.25rem;
+}
+.card1:hover{
+    transform: translateY(-0.625rem);
+}
+.skill{
+    width: 10rem;
+    height: 10rem;
+   
+    position: relative;
+}
+.outer{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+
+padding: 1.25rem;
+box-shadow: 0.375rem 0.375rem 0.625rem -0.063rem rgba(0, 0, 0, 0.15),
+             -0.375rem -0.375rem 0.625rem -0.063rem rgba(255, 255, 255, 0.7);
+
+
+}
+.inner{
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 1.25rem;
+    box-shadow: inset 0.313rem 0.313rem 0.375rem -0.063rem rgba(0, 0, 0, 0.2) ,
+   inset  -0.313rem -0.313rem 0.375rem --0.063rem rgba(255, 255, 255, 0.7),
+   
+   0.031rem 0.031rem 0rem rgba(0, 0, 0, 0.15),
+0rem 0.75rem 0.625rem -0.625rem rgba(0, 0, 0, 0.05) ;
+}
+#number{
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serifs;
+    color: whitesmoke;
+    left: 0.625rem;
+    bottom: 0.75rem;
+    position: relative;
+}
+
+#circle_under{
+position: relative;
+bottom: -7.563rem;
+color: white;
+left: -0.938rem;
+
+}
+
+.circle1 circle{
+    fill: none;
+    stroke:url(#GradientColor);
+    stroke-width: 1.25rem;
+    stroke-dasharray: 450 ;
+    stroke-dashoffset:  450;
+    animation: anime 2s linear forwards;
+}
+
+.circle2 circle{
+    fill: none;
+    stroke:url(#GradientColor);
+    stroke-width: 1.25rem;
+    stroke-dasharray: 240 ;
+    stroke-dashoffset:  240;
+    animation: anime 2s linear forwards;
+}
+.circle3 circle{
+    fill: none;
+    stroke:url(#GradientColor);
+    stroke-width: 1.25rem;
+    stroke-dasharray: 410 ;
+    stroke-dashoffset: 410;
+    animation: anime 2s linear forwards;
+}
+.circle4 circle{
+    fill: none;
+    stroke:url(#GradientColor);
+    stroke-width: 1.25rem;
+    stroke-dasharray: 180 ;
+    stroke-dashoffset:  110;
+    animation: anime 2s linear forwards;
+}
+@keyframes anime{
+    100%{
+        stroke-dashoffset:0;
+    }
+}
+    
+    
+
+svg{
+    position: absolute;
+    top: -0.188rem;
+    left: -0.125rem;
+}
+
+button{
+    
+   
+     margin: 2%;
+    width: 10rem;
+    text-align: center;
+    position: absolute;
+    left: 15rem;
+    bottom: 3.125rem;
+    padding: 1rem;
+    font-size: medium;
+    background:transparent;
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: bold;   
+    z-index: 1;
+    cursor: pointer;
+}
+
+span{
+    background: #f55d5d;
+    width: 0%;
+    height: 100%;
+    border-radius: 0.75rem;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span::after{
+    top: 0%;
+    right: -1.25rem;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+button:hover span{
+    width: 100%;
+    
+}
+
+button:hover{
+    border: none;
+}
+
+button:hover span::after{
+    top: 0%;
+    right: -1.25rem;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+mark.yo{
+    color:#f55d5d;
+    background: transparent;
+}
+
+
+ /*Second Section Of Second Page */
+
+
+ .container{
+    background: #070f0f	;
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.About{
+    width: 39%;
+
+}
+
+.About h2{
+    font-family: 'Allison';
+    color: crimson;
+    padding-bottom: 1.8rem;
+    font-size: 5rem;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.About p{
+    color: #f1f1f1;
+    font-size: 1.3rem;
+}
+
+.cards{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 2rem;
+    position: relative;
+    
+}
+
+.person1{
+    width: 50rem;
+    height: 31.8rem;
+    box-sizing: border-box;
+    background: white;
+    box-shadow:
+  0 0.119rem 0.225rem rgba(0, 0, 0, 0.021),
+  0 0.338rem 0.625rem rgba(153, 92, 92, 0.03),
+  0 0.813rem 1.506rem rgba(0, 0, 0, 0.039),
+  0 2.688rem 5rem rgba(0, 0, 0, 0.06)
+;
+
+
+
+}
+
+.image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.profess p{
+    padding-top: 0.2rem;
+
+}
+
+.persondetails{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 1rem;
+    padding-left: 0.4rem;
+    
+
+}
+ .persondetails h4{
+     color: #fc5866;
+     font-size: 1.8rem;
+     padding-bottom: 0.3rem;
+     
+ }
+
+ /*RoundCard Pages*/
+ .section3bg{
+     
+    background: #070f0f	;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+
+ 
+.section3{
+    margin: 2%;
+    padding-top: 8rem;
+    background: #070f0f	;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+
+}
+
+.roundcard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.rimage1 img ,.rimage2 img, .rimage3 img{
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    border: 0.313rem solid crimson;
+    box-sizing: border-box;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.heading h2{
+    color: white;
+    font-size: 5rem;
+    padding-top: 10rem;
+    position: absolute;
+    bottom: -65rem;
+    left: 25%;
+}
+ 
+
+
+.gotop{
+    width: 6.5%;
+    background: black;
+    color: white;
+    position: absolute;
+    left: 91.9%;
+    transform: translateY(9rem);
+    transition: transform 1s ;
+    
+}
+
+.gotop::after{
+    width: 0%;
+}
+
+.gotop:hover{
+    
+    transform: translateY(7.8rem);
+    width: 6.6%;
+}
+.column3{
+    padding: 3px;
+}
